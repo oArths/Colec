@@ -1,35 +1,43 @@
 *{
-    font-family: 'Rufina', serif;
+    font-family: "Cheltenham";
     padding: 0;
     margin: 0;
     text-decoration: none;
     color: white;
 }
+
 .Home{
-    background-image: url("../img/home.png");
+    background-image: url(../img/home\ .svg);
     background-size: cover; 
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 136vh;
+    width: auto;
 }
 .header {
-    background-color: rgba(0, 0, 0, 0.096);
+    background-color: rgba(0, 0, 0, 0.007);
+    backdrop-filter: blur(5px);    
     width: 100%;
-    height: 100px;
+    height: 70px;
     display: flex;
     justify-content: start;
     align-items: center ;
+    position: fixed; 
+    top: 0; 
+    z-index: 1000;
+    border-bottom: 10px  rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1)
     
 }
 .container{
     display: flex;
-    width: 60%;
+    width: 65%;
     align-items: center;
     justify-content: space-between;
 }
 .logo {
     margin-left: 20px;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 nav {
@@ -39,24 +47,152 @@ nav {
 }
 nav > a {
     
-    font-size: 30px;
+    font-size: 25px;
 }
-.main{
+
+.mainHome{
     width: 100%;
     height: 800px;
     display: flex;
-    /* align-items: center; */
+   
 }
-.containerMain{
-    margin-left: 10vw;
-    margin-top: 25vh;
+.containerMainHome{
+    margin-left: 7vw;
+    margin-top: 30vh;
 }
-.containerMain > h1{
+.containerMainHome > h1{
     font-size: 70px;
+    font-weight: 100;
 }
-.containerMain > h3{
+.containerMainHome > h3{
+    margin-top: 2vh;
+    color: #C7C7C7;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+
+
+.Sobre{
+    background-image: url("../img/AboutUs.svg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 134vh;
+    width: auto;
+
+}
+.mainSobre{
+    height: 800px;
+    display: flex;
+    align-items: center;
+    margin-left: 7vw;
+}
+.containerMainSobre > h1{
+    font-size: 44px;
+    font-weight: 100;
+}
+.containerMainSobre > h3{
+    margin-top: 2vh;
+    color: #C7C7C7;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+
+.Planos{
+    background-color: black;    
+    height: 134vh;
+    width: auto;
+}
+.mainPlanos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+}
+.TodosPlanos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 50px;
+}
+.containerMainText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.containerMainText  > h1{
+    font-size: 44px;
+}
+.containerMainText > h3{
+    font-size: 18px;
+}
+.containerMainPlanos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.Vanguarda{
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    background-color: #262525b6;
+    width: 320px;
+    height: 450px;
+
+}
+.VanguardaItems{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: normal; 
+    margin-left: 2vw;
+    gap: 35px;
+
+}
+.textVanguard > h2{
+    font-size: 30px;
+
+}
+.textVanguard > p{
+    font-size: 14px;
+    color: #C7C7C7;
+
+}
+.subDescricao{
+    font-size: 14px;
+}
+.stokepreco{
+    text-decoration: line-through;
+    font-size: 18px;
+}
+.precoVanguarda > h2 {
     font-size: 28px;
 }
+.precoVanguarda > p{
+    color: #C7C7C7;
 
+}
+.Descricao > h3{
+    font-weight: 100;
+    
+}
+.botaoVanguarda{
+    background-color: #262525b6 ;
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    width: 249px;
+    height: 52px;
 
-
+}
