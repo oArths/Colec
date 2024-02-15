@@ -4,16 +4,18 @@
     margin: 0;
     text-decoration: none;
     color: white;
+    transition: 0.5s;
 }
 
 .Home{
     background-image: url(../img/home\ .svg);
     background-size: cover; 
     background-repeat: no-repeat;
-    height: 136vh;
+    height: 110vh;
     width: auto;
 }
 .header {
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.007);
     backdrop-filter: blur(5px);    
     width: 100%;
@@ -30,7 +32,7 @@
 }
 .container{
     display: flex;
-    width: 65%;
+    width: 60%;
     align-items: center;
     justify-content: space-between;
 }
@@ -61,13 +63,13 @@ nav > a {
     margin-top: 30vh;
 }
 .containerMainHome > h1{
-    font-size: 70px;
+    font-size: 80px;
     font-weight: 100;
 }
 .containerMainHome > h3{
     margin-top: 2vh;
     color: #C7C7C7;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 300;
 }
 
@@ -77,7 +79,7 @@ nav > a {
     background-image: url("../img/AboutUs.svg");
     background-size: cover; 
     background-repeat: no-repeat;
-    height: 134vh;
+    height: 110vh;
     width: auto;
 
 }
@@ -88,20 +90,20 @@ nav > a {
     margin-left: 7vw;
 }
 .containerMainSobre > h1{
-    font-size: 44px;
+    font-size: 62px;
     font-weight: 100;
 }
 .containerMainSobre > h3{
     margin-top: 2vh;
     color: #C7C7C7;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 300;
 }
 
 
 .Planos{
     background-color: black;    
-    height: 134vh;
+    height: 110vh;
     width: auto;
 }
 .mainPlanos{
@@ -110,25 +112,27 @@ nav > a {
     justify-content: center;
     align-items: center;
     gap: 40px;
+    height: 100%;
     
 }
 .TodosPlanos{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }
 .containerMainText{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 .containerMainText  > h1{
-    font-size: 44px;
+    font-size: 48px;
 }
 .containerMainText > h3{
-    font-size: 18px;
+    font-size: 22px;
 }
 .containerMainPlanos{
     display: flex;
@@ -137,6 +141,11 @@ nav > a {
     align-items: center;
     gap: 80px;
 }
+.containerMainPlanos:hover > :not(:hover){
+    opacity: .4;
+    transform: scale(90%);
+
+}
 
 .Vanguarda{
     border: 1px solid #FFFFFF;
@@ -144,15 +153,20 @@ nav > a {
     background-color: #262525b6;
     width: 320px;
     height: 450px;
+    transition: .35s;
+    cursor: pointer;
+
+}
+.Vanguarda:hover{
+    border: 0.5px solid #f9dc5c71     ;
 
 }
 .VanguardaItems{
     margin-top: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; 
-    align-items: normal; 
-    margin-left: 2vw;
+    justify-content: center; 
+    align-items: center; 
     gap: 35px;
 
 }
@@ -194,5 +208,45 @@ nav > a {
     border-radius: 5px;
     width: 249px;
     height: 52px;
+    transition: transform  0.10s ease-in;
 
+}
+.botaoVanguarda:hover{
+    cursor: pointer;
+    color: #FFFFFF;     
+    border: 0.5px solid #f9dc5cbb;
+
+}
+.botaoVanguarda:active{
+    transform: scale(98%)
+}
+@keyframes grow {
+    0% {
+      transform: scale(100%);
+    }
+    75% {
+      transform: scale(101%);
+    }
+    100% {
+      transform: scale(100%);
+    }
+  }
+.footerMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #1E1E1E;    
+    height: 14vh;
+    width: auto;
+}
+.footerMain > span{
+    color: white;
+    margin-bottom: 20px;
+}
+.Git{
+    color: black;
+    width: 50px;
+    opacity: 80%;
 }
