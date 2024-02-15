@@ -5,6 +5,7 @@
     text-decoration: none;
     color: white;
     transition: 0.5s;
+    scroll-behavior: smooth; 
 }
 
 .Home{
@@ -50,6 +51,7 @@ nav {
 nav > a {
     
     font-size: 25px;
+    transition: color 0.3s ease-in-out;
 }
 
 .mainHome{
@@ -76,7 +78,7 @@ nav > a {
 
 
 .Sobre{
-    background-image: url("../img/AboutUs.svg");
+    background-image: url("../img/Bk.png");
     background-size: cover; 
     background-repeat: no-repeat;
     height: 110vh;
@@ -96,7 +98,7 @@ nav > a {
 .containerMainSobre > h3{
     margin-top: 2vh;
     color: #C7C7C7;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
 }
 
