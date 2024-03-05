@@ -1,254 +1,237 @@
-*{
-    font-family: "Cheltenham";
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    color: white;
-    transition: 0.5s;
-    scroll-behavior: smooth; 
+* {
+  font-family: "Cheltenham";
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  scroll-behavior: smooth;
 }
 
-.Home{
-    background-image: url(../img/home\ .svg);
-    background-size: cover; 
-    background-repeat: no-repeat;
-    height: 110vh;
-    width: auto;
+.Home {
+  background-image: url(../img/home\ .svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 110vh;
+  width: auto;
 }
 .header {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.007);
-    backdrop-filter: blur(5px);    
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: start;
-    align-items: center ;
-    position: fixed; 
-    top: 0; 
-    z-index: 1000;
-    border-bottom: 10px  rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1)
-    
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.007);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-.container{
-    display: flex;
-    width: 60%;
-    align-items: center;
-    justify-content: space-between;
+.container {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
 }
 .logo {
-    margin-left: 20px;
-    text-transform: uppercase;
-    font-size: 40px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-size: 40px;
 }
 
 nav {
-    display: flex;
-    gap: 70px;
-    
+  display: flex;
+  gap: 70px;
 }
 nav > a {
-    
-    font-size: 25px;
-    transition: color 0.3s ease-in-out;
+  font-size: 25px;
+  transition: color 0.3s ease-in-out;
 }
 
-.mainHome{
-    width: 100%;
-    height: 800px;
-    display: flex;
-   
+.mainHome {
+  width: 100%;
+  height: 800px;
+  display: flex;
 }
-.containerMainHome{
-    margin-left: 7vw;
-    margin-top: 30vh;
+.containerMainHome {
+  margin-left: 7vw;
+  margin-top: 30vh;
 }
-.containerMainHome > h1{
-    font-size: 80px;
-    font-weight: 100;
+.containerMainHome > h1 {
+  font-size: 80px;
+  font-weight: 100;
 }
-.containerMainHome > h3{
-    margin-top: 2vh;
-    color: #C7C7C7;
-    font-size: 35px;
-    font-weight: 300;
-}
-
-
-
-.Sobre{
-    background-image: url("../img/Bk.png");
-    background-size: cover; 
-    background-repeat: no-repeat;
-    height: 110vh;
-    width: auto;
-
-}
-.mainSobre{
-    height: 800px;
-    display: flex;
-    align-items: center;
-    margin-left: 7vw;
-}
-.containerMainSobre > h1{
-    font-size: 62px;
-    font-weight: 100;
-}
-.containerMainSobre > h3{
-    margin-top: 2vh;
-    color: #C7C7C7;
-    font-size: 25px;
-    font-weight: 300;
+.containerMainHome > h3 {
+  margin-top: 2vh;
+  color: #c7c7c7;
+  font-size: 35px;
+  font-weight: 300;
 }
 
-
-.Planos{
-    background-color: black;    
-    height: 110vh;
-    width: auto;
+.Sobre {
+  background-image: url("../img/Bk.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 110vh;
+  width: auto;
 }
-.mainPlanos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    height: 100%;
-    
+.mainSobre {
+  height: 800px;
+  display: flex;
+  align-items: center;
+  margin-left: 7vw;
 }
-.TodosPlanos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
+.containerMainSobre > h1 {
+  font-size: 62px;
+  font-weight: 100;
 }
-.containerMainText{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
-.containerMainText  > h1{
-    font-size: 48px;
-}
-.containerMainText > h3{
-    font-size: 22px;
-}
-.containerMainPlanos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-}
-.containerMainPlanos:hover > :not(:hover){
-    opacity: .4;
-    transform: scale(90%);
-
+.containerMainSobre > h3 {
+  margin-top: 2vh;
+  color: #c7c7c7;
+  font-size: 25px;
+  font-weight: 300;
 }
 
-.Vanguarda{
-    border: 1px solid #FFFFFF;
-    border-radius: 20px;
-    background-color: #262525b6;
-    width: 320px;
-    height: 450px;
-    transition: .35s;
-    cursor: pointer;
+.Planos {
+  background-color: black;
+  height: 110vh;
+  width: auto;
+}
+.mainPlanos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 100%;
+}
+.TodosPlanos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.containerMainText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.containerMainText > h1 {
+  font-size: 48px;
+}
+.containerMainText > h3 {
+  font-size: 22px;
+}
+.containerMainPlanos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.containerMainPlanos:hover > :not(:hover) {
+  opacity: 0.4;
+  transform: scale(90%);
+}
 
+.Vanguarda {
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  background-color: #262525b6;
+  width: 320px;
+  height: 450px;
+  transition: 0.35s;
+  cursor: pointer;
 }
-.Vanguarda:hover{
-    border: 0.5px solid #f9dc5c71     ;
-
+.Vanguarda:hover {
+  border: 0.5px solid #f9dc5c71;
 }
-.VanguardaItems{
-    margin-top: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    gap: 35px;
-
+.VanguardaItems {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
 }
-.textVanguard > h2{
-    font-size: 30px;
-
+.textVanguard > h2 {
+  font-size: 30px;
 }
-.textVanguard > p{
-    font-size: 14px;
-    color: #C7C7C7;
-
+.textVanguard > p {
+  font-size: 14px;
+  color: #c7c7c7;
 }
-.subDescricao{
-    font-size: 14px;
+.subDescricao {
+  font-size: 14px;
 }
-.stokepreco{
-    text-decoration: line-through;
-    font-size: 18px;
+.stokepreco {
+  text-decoration: line-through;
+  font-size: 18px;
 }
 .precoVanguarda > h2 {
-    font-size: 28px;
+  font-size: 28px;
 }
-.precoVanguarda > p{
-    color: #C7C7C7;
-
+.precoVanguarda > p {
+  color: #c7c7c7;
 }
-.Descricao > h3{
-    font-weight: 100;
-    
+.Descricao > h3 {
+  font-weight: 100;
 }
-.botaoVanguarda{
-    background-color: #262525b6 ;
-    margin-top: 21px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    border: 1px solid #FFFFFF;
-    border-radius: 5px;
-    width: 249px;
-    height: 52px;
-    transition: transform  0.10s ease-in;
-
+.botaoVanguarda {
+  background-color: #262525b6;
+  margin-top: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  width: 249px;
+  height: 52px;
+  transition: transform 0.1s ease-in;
 }
-.botaoVanguarda:hover{
-    cursor: pointer;
-    color: #FFFFFF;     
-    border: 0.5px solid #f9dc5cbb;
-
+.botaoVanguarda:hover {
+  cursor: pointer;
+  color: #ffffff;
+  border: 0.5px solid #f9dc5cbb;
 }
-.botaoVanguarda:active{
-    transform: scale(98%)
+.botaoVanguarda:active {
+  transform: scale(98%);
 }
 @keyframes grow {
-    0% {
-      transform: scale(100%);
-    }
-    75% {
-      transform: scale(101%);
-    }
-    100% {
-      transform: scale(100%);
-    }
+  0% {
+    transform: scale(100%);
   }
-.footerMain{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: #1E1E1E;    
-    height: 14vh;
-    width: auto;
+  75% {
+    transform: scale(101%);
+  }
+  100% {
+    transform: scale(100%);
+  }
 }
-.footerMain > span{
-    color: white;
-    margin-bottom: 20px;
+.footerMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background-color: #1e1e1e;
+  height: 14vh;
+  width: auto;
 }
-.Git{
-    color: black;
-    width: 50px;
-    opacity: 80%;
+.footerMain > span {
+  color: white;
+  margin-bottom: 20px;
+ 
+}
+.Git {
+  color: black;
+  width: 50px;
+  opacity: 80%;
 }
