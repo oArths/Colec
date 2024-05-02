@@ -5,58 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colec</title>
     <link rel="stylesheet" href="./src/styles/styles.css">
-    <link rel="icon" href="./src/img/icon.svg" >  
+    <link rel="icon" href="./src/img/icon.svg" >
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="caminho/do/seu/typed.plugin.js"></script>
+
+
 </head>
 
 <body >
-    <div class="Home" >
+    <div class="AllConatiner">
+        <div class="Home" >
         
-        <header class="header">
-            <div class="container">
-                <h1 class="logo">
-                    Colec
-                </h1>
-                <nav >
-                    <a class="op" href="#section1">Inicio</a>
-                    <a class="op"  href="#section2">Sobre</a>
-                    <a  class="op" href="#section3">Assinaturas</a>
-                </nav>
-            </div>
-
-        </header>
-
-        <main class="mainHome" id="section1"> 
-            <div class="containerMainHome">
-                <h1>
-                    Experimente a magia <br>do vinil.
-                </h1>
-                <h3>
-                    Reviva a experiência única de ouvir vinil<br> crie novas memórias.
-                </h3>
-                <div class="button_Conehcer">Conhecer</div>
-            </div>
-        </main>
-
         
-    </div>
+            <header class="header">
+                <div class="container">
+                    <h1 class="logo">
+                        Colec
+                    </h1>
+                    <nav >
+                        <a class="op" href="#section1">Inicio</a>
+                        <a class="op"  href="#section2">Sobre</a>
+                        <a  class="op" href="#section3">Assinaturas</a>
+                    </nav>
+                </div>
+    
+            </header>
+    
+            <main class="mainHome" id="section1"> 
+                <div class="containerMainHome">
+                    <div class="animation">
+                    <h1 id="texto-animado"></h1>
+                    </div>
+                    <div class="Conatiner_header">
+                        <div class="button_Conehcer">Conhecer</div>
+                    </div>
+                </div>
+            </main>
+    
+            
+        </div>
+    
+        <div class="Sobre" id="section2">
+            <main class="mainSobre" > 
+                <div class="containerMainSobre">
+                    <div class=" heardertext"> o vinil proporciona uma experiência singular.</div>
+                    <div class="imgcontainer">
+                        <div class="containerimg1">
+                            <div class="text">Zé Keti</div>
+                            <div class="img1"><div class="textenter">Artistas <br/> Unicos</div></div>
+                        </div>
+                        <div class="containerimg1">
+                            <div class="text">Pumapjl</div>
+                            <div class="img2"><div class="textenter">todos os generos</div></div>
+                        </div>
+                        <div class="containerimg1">
+                            <div class="text">Tarcis</div>
+                            <div class="img3"><div class="textenter1">todos⠀os </div> <div class="textenter1">sentidos</div></div>
+                        </div>
+                    </div>
+                    <!-- <div class=" heardertext"> o vinil proporciona uma experiência singular</div> -->
 
-    <div class="Sobre" id="section2">
-        <main class="mainSobre" > 
-            <div class="containerMainSobre">
-                <h1>
-                    Tenha sua coleção 
-                </h1>
-                <h3>
-                    A excelência incomparável do vinil proporciona uma experiência única<br/> 
-                    com o prazer de ouvir música no aconchego do seu lar.<br/> 
-                    Na Colec, transformamos esse sonho em realidade. Apresentamos <br/>
-                     a mais refinada e abrangente coleção de vinis disponível no Brasil, <br/>
-                      garantindo uma jornada musical envolvente e exclusiva  <br/>
-                      para todos os amantes de música. Explore nossos tesouros <br/>
-                       e mergulhe no mundo do vinil.
-                </h3>
-            </div>
-        </main>       
+                </div>
+            </main>       
+        </div>
     </div>
 
     <div class="Planos" id="section3">
@@ -155,5 +166,31 @@
     
 </body>
 
+<script>
+    var options = {
+      strings: ['Experimente a magia <br/>da Colec.', 'Reviva a experiência de ouvir vinil.', ' crie novas memórias.^1000'],
+      typeSpeed: 70, // Velocidade da digitação em milissegundos
+      backSpeed: 30, // Velocidade de retrocesso em milissegundos
+      loop: true, // Se deve ou não fazer um loop no texto
+      cursorChar: '',
+      contentType: 'html' // Define o tipo de conteúdo como HTML
 
-</html>
+    };
+  
+    var typed = new Typed('#texto-animado', options);
+  </script>
+  
+
+
+</html> <!-- <h1>
+    Tenha sua coleção 
+</h1>
+<h3>
+    A excelência incomparável do vinil proporciona uma experiência única<br/> 
+    com o prazer de ouvir música no aconchego do seu lar.<br/> 
+    Na Colec, transformamos esse sonho em realidade. Apresentamos <br/>
+     a mais refinada e abrangente coleção de vinis disponível no Brasil, <br/>
+      garantindo uma jornada musical envolvente e exclusiva  <br/>
+      para todos os amantes de música. Explore nossos tesouros <br/>
+       e mergulhe no mundo do vinil.
+</h3> -->
