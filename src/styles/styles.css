@@ -1,11 +1,6 @@
 @font-face {
   font-family: "Draper";
-  src: url("https://db.onlinewebfonts.com/t/1df7ec39ce3f151f8c44c65de49bf40c.eot");
-  src: url("https://db.onlinewebfonts.com/t/1df7ec39ce3f151f8c44c65de49bf40c.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/1df7ec39ce3f151f8c44c65de49bf40c.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/1df7ec39ce3f151f8c44c65de49bf40c.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/1df7ec39ce3f151f8c44c65de49bf40c.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/1df7ec39ce3f151f8c44c65de49bf40c.svg#Draper")format("svg");
+  src: url("../font/Draper.ttf");
 }
 * {
   font-family: "Draper";
@@ -114,6 +109,7 @@ width: 85vw;
   cursor: pointer;
 }
 .button_Conehcer:hover{
+  letter-spacing: 20px;
   border-bottom: 0.5px solid rgb(255, 255, 255);
 }
 
@@ -178,7 +174,7 @@ width: 85vw;
   text-align: center;
   padding: 10px;
   font-size: 40px;
-  width: 10%;
+  width: 6%;
   word-break: break-all;
 }
 .img1{
