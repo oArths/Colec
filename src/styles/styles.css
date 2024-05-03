@@ -47,14 +47,14 @@
 }
 .container {
   display: flex;
-  width: 70%;
+  width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
-.logo {
-  margin-left: 20px;
-  text-transform: uppercase;
-  font-size: 30px;
+#logo {
+ position: absolute;
+ top: 20px;
+ left: 10px;
 }
 
 nav {
@@ -91,10 +91,12 @@ nav {
 .Conatiner_header{
 display: flex;
 flex-direction: column;
-align-items: start;
-justify-content: left;
+align-items: center;
+justify-content: center;
 gap: 40px;
 width: 85vw;
+height: 40px;
+padding: 10px;
 }
 .Subtitle {
   color: #fcd7fa; 
@@ -175,7 +177,7 @@ width: 85vw;
   
 }
 .blur{
-  width: 98.2%;
+  width: 33%;
   height: 460px;
   background-color: rgba(0, 0, 0, 0.363);
   backdrop-filter: blur(5px);
