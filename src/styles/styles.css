@@ -12,12 +12,14 @@
   color: white;
   transition: 0.5s;
   scroll-behavior: smooth;
-  cursor: auto;
+  cursor: crosshair;
+
 
 }
 .AllConatiner{
   display: flex;
   flex-direction: column;
+
 }
 
 .Home {
@@ -40,7 +42,7 @@
   z-index: 1;
   border-bottom: 10px rgba(255, 255, 255, 0.2);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+  /* cursor: pointer; */
 
 }
 .container {
@@ -62,7 +64,7 @@ nav {
 .op{
   font-size: 20px;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0);
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.3s ease-in-out;
 }
 .op:hover{
@@ -83,7 +85,7 @@ nav {
 }
 .animation > h1 {
   font-size: 4.5rem;
-  cursor: pointer;
+  /* cursor: pointer; */
 
 }
 .Conatiner_header{
@@ -98,7 +100,7 @@ width: 85vw;
   color: #fcd7fa; 
   font-size: 20px;
   font-weight: 300;
-  cursor: pointer;
+  /* cursor: pointer; */
 
 }
 .button_Conehcer{
@@ -106,9 +108,9 @@ width: 85vw;
   font-size: 20px;
   color: #ffffff;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
-.button_Conehcer:hover{
+.Conatiner_header:hover .button_Conehcer{
   letter-spacing: 20px;
   border-bottom: 0.5px solid rgb(255, 255, 255);
 }
@@ -122,6 +124,9 @@ width: 85vw;
 
 }
 .mainSobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.151);
   backdrop-filter: blur(10px);  
   height: 100vh;
@@ -136,6 +141,7 @@ width: 85vw;
   justify-content: space-between;
   height: 750px;
   padding: 10px;
+  width: 97%;
   margin-bottom: 285px;
   border: 0.5px solid wheat;
   position: relative;
@@ -158,11 +164,29 @@ width: 85vw;
   flex-direction: column;
   justify-content: space-between;
   width: 33%;
+  /* height: 400px; */
   border: 0.5px solid wheat;
+ 
+
 }
 .text{
   font-size: 20px;
   padding: 20px;
+  
+}
+.blur{
+  width: 98.2%;
+  height: 460px;
+  background-color: rgba(0, 0, 0, 0.363);
+  backdrop-filter: blur(5px);
+  position: absolute;  
+  z-index: 10;
+  transition: all 0.3 ease;
+}
+.blur:hover{
+  background-color: rgba(0, 0, 0, 0.007);
+  backdrop-filter: blur(0px);
+
 }
 .textenter{
   padding: 10px;
@@ -183,7 +207,9 @@ width: 85vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  width: 600px;
   height: 400px;
+  
 }
 .img2{
   display: flex;
@@ -271,7 +297,7 @@ width: 85vw;
   width: 320px;
   height: 450px;
   transition: 0.35s;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .Vanguarda:hover {
   border: 0.5px solid #f9dc5c71;
@@ -321,7 +347,7 @@ width: 85vw;
   transition: transform 0.1s ease-in;
 }
 .botaoVanguarda:hover {
-  cursor: pointer;
+  /* cursor: pointer; */
   color: #ffffff;
   border: 0.5px solid #f9dc5cbb;
 }
